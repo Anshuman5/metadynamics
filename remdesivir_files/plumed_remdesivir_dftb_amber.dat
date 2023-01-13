@@ -1,0 +1,17 @@
+# Compute the main dihedrals angles of Remdesirvir:
+dih1: TORSION ATOMS=2,16,20,23
+dih2: TORSION ATOMS=18,19,21,5
+
+# Activate well-tempered metadynamics 
+metad: METAD ARG=dih1,dih2 PACE=500 HEIGHT=1.2 SIGMA=0.35,0.35 BIASFACTOR=10 FILE=HILLS GRID_BIN=120,120 GRID_MIN=-pi,-pi GRID_MAX=pi,pi TEMP=298
+
+# Deposit a Gaussian every 500 time steps, with initial height equal to 1.2 kJ/mol
+
+# Gaussian width (sigma) should be chosen based on CV fluctuation in unbiased run
+
+# the bias factor should be wisely chosen
+
+# Gaussians will be written to file and also stored on grid
+
+# Print both collective variables and the value of the bias potential on COLVAR file
+PRINT STRIDE=10 ARG=dih1,dih2,metad.bias FILE=COLVAR
