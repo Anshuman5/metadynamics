@@ -12,4 +12,4 @@ contains the scripts and data used to generate fig4, fig.5 and fig.6  in the man
 in performing metadynamics caculations.
 
 ## dockerfile: 
-script used to create the gpu-dftb-plumed image using HPC container maker.
+script used to create the gpu-dftb-plumed image using HPC container maker (refer: https://github.com/NVIDIA/hpc-container-maker).
