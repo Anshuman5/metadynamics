@@ -11,4 +11,5 @@ geometry files for alanine dipeptide.
 contains the scripts and data used to generate fig4, fig.5 and fig.6  in the manuscript. Also contains dftb and plumed input files used 
 in performing metadynamics caculations.
 
-## dockerfile: script used to create the gpu-dftb-plumed image using HPC container maker.
+## dockerfile: 
+script used to create the gpu-dftb-plumed image using HPC container maker.
