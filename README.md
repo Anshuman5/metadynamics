@@ -8,7 +8,7 @@ contains the scripts and data used to generate fig.1, fig.2, and fig.3 in the ma
 geometry files for alanine dipeptide.
 
 ## remdesivir_files:
-contains the scripts and data used to generate fig4, fig.5 and fig.6  in the manuscript. Also contains dftb and plumed input files used 
+contains the scripts and data used to generate fig4, fig.5 and fig.6  in the manuscript. Also contains GPU-dftb and plumed input files used 
 in performing metadynamics caculations.
 
 ## dockerfile: 
